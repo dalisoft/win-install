@@ -1,0 +1,7 @@
+**/*.lock.json
+**/*.lock
+askpass.sh
+Brewfile
+!/**/Brewfile
+.DS_Store
+.history
