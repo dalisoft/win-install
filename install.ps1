@@ -28,7 +28,6 @@ choco install gradle llvm                             # Additions to PL
 choco install heroku-cli                              # Terminal additions
 choco install linkshellextension                      # Essential utilities
 choco install watchman                                # Dependencies
-choco install pyqt5 heroku-cli                        # Additional tools
 
 Write-Output "Installing apps..."
 choco install 7zip                               # Essential desktop tools
