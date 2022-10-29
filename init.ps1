@@ -21,8 +21,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --install
 # Update WSL2 anyway
 wsl --update
-# Instal WSL2 Ubuntu 20.04
-wsl --install -d Ubuntu-20.04
 
 # SSH starting
 Set-Service ssh-agent -StartupType Automatic

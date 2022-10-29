@@ -50,6 +50,11 @@ choco install cuda
 winget install --silent Nvidia.Broadcast
 winget install --silent Paragon.APFS
 
+winget install --silent Microsoft.HEIFImageExtension_8wekyb3d8bbwe
+winget install --silent Microsoft.HEVCVideoExtension_8wekyb3d8bbwe
+winget install --silent Microsoft.AV1VideoExtension_8wekyb3d8bbwe
+winget install --silent Microsoft.VP9VideoExtensions_8wekyb3d8bbwe
+
 ##########################
 ####### GUI / Apps #######
 ##########################
@@ -105,6 +110,7 @@ choco install vscode-insiders
 ## choco install vscode vmware-workstation-player
 ## choco install webstorm zerotier-one zoom
 choco install wiztree ventoy linkshellextension
+choco install wsl-ubuntu-2204
 
 
 ##########################
