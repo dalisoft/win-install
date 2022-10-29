@@ -25,7 +25,7 @@ If you want guide (optional), there exists a file. See [here](./guide.md)
 ```shell
 # go-to your desired downloads folder
 git clone https://github.com/dalisoft/win-install.git
-cd win-config-shell
+cd win-install
 ```
 
 > Run PowerShell as admin right

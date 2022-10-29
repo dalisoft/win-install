@@ -24,4 +24,14 @@ wsl --update
 # Instal WSL2 Ubuntu 20.04
 wsl --install -d Ubuntu-20.04
 
+# SSH starting
+Set-Service ssh-agent -StartupType Automatic
+git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
+cmd.exe /c "sc config ssh-agent start=auto"
+cmd.exe /c "net start ssh-agent"
+
+# Network performance improvement
+netsh winsock reset
+netsh int tcp set global autotuninglevel=normal
+
 Write-Output "Reboot your device to finish"

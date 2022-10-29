@@ -1,18 +1,3 @@
-# Install Chocolatey
-Write-Output "Installing chocolatey..."
-$testchoco = powershell choco -v
-if (-not($testchoco)) {
-	Write-Output "Seems Chocolatey is not installed, installing now"
-	Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-}
-else {
-	Write-Output "Chocolatey Version $testchoco is already installed"
-}
-
-# First disable prompt
-Write-Output "Disabling prompt for every installation..."
-choco feature enable -n=allowGlobalConfirmation
-
 choco install choco-cleaner
 
 ##########################
@@ -63,11 +48,13 @@ choco install nvidia-display-driver
 choco install geforce-experience
 choco install cuda
 winget install --silent Nvidia.Broadcast
+winget install --silent Paragon.APFS
 
 ##########################
 ####### GUI / Apps #######
 ##########################
 # Unavailable apps are commented
+## Not used apps are double-commented
 
 Write-Output "Installing apps..."
 winget install --silent 1password
