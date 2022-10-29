@@ -8,9 +8,7 @@
 
 **I do not guarantee nor support for your any damage & data loss, do & run it at your own risk**
 
-## Guide
-
-If you want guide (optional), there exists a file. See [here](./guide.md)
+Looking similar for macOS? Look at [here](https://github.com/dalisoft/mac-config-shell)
 
 ## Pre-installation
 
@@ -19,8 +17,6 @@ If you want guide (optional), there exists a file. See [here](./guide.md)
 - Admin access
 
 ## Installation
-
-## First clone repo
 
 ```shell
 # go-to your desired downloads folder
