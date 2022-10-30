@@ -31,7 +31,7 @@ choco install nodejs php python3
 # choco install pinentry pipx pixman
 choco install qemu postgresql14
 # choco install podman qt pyqt
-choco install rclone ripgrep rsync
+choco install rclone ripgrep rsync fastcopy
 choco install rust rust-analyzer
 choco install smartmontools speedtest starship
 # choco install tmux tmuxinator
@@ -47,13 +47,17 @@ choco install yt-dlp mongodb
 choco install nvidia-display-driver
 choco install geforce-experience
 choco install cuda
-winget install --silent Nvidia.Broadcast
-winget install --silent Paragon.APFS
+choco install mac-precision-touchpad
+winget install --silent Nvidia.Broadcast --accept-package-agreements --accept-source-agreements
+winget install --silent Paragon.APFS --accept-package-agreements --accept-source-agreements
 
-winget install --silent Microsoft.HEIFImageExtension_8wekyb3d8bbwe
-winget install --silent Microsoft.HEVCVideoExtension_8wekyb3d8bbwe
-winget install --silent Microsoft.AV1VideoExtension_8wekyb3d8bbwe
-winget install --silent Microsoft.VP9VideoExtensions_8wekyb3d8bbwe
+# The bug is here and it may not work until the issue
+# https://github.com/microsoft/winget-cli/issues/1585
+# is fixed
+# winget install --silent 'HEIF Image Extensions' --accept-package-agreements --accept-source-agreements
+# winget install --silent --source msstore 'HEVC Video Extensions from Device Manufacturer' --accept-package-agreements --accept-source-agreements
+# winget install --silent --source msstore 'AV1 Video Extension' --accept-package-agreements --accept-source-agreements
+# winget install --silent 'VP9 Video Extensions'  --accept-package-agreements --accept-source-agreements
 
 ##########################
 ####### GUI / Apps #######
@@ -62,11 +66,11 @@ winget install --silent Microsoft.VP9VideoExtensions_8wekyb3d8bbwe
 ## Not used apps are double-commented
 
 Write-Output "Installing apps..."
-winget install --silent 1password
-winget install --silent adguard
-winget install --silent adguardvpn
+winget install --silent 1password --accept-package-agreements --accept-source-agreements
+winget install --silent adguard --accept-package-agreements --accept-source-agreements
+winget install --silent adguardvpn --accept-package-agreements --accept-source-agreements
 # choco install affinity-designer addinity-photo
-winget install altair-graphql.altair
+winget install --silent altair-graphql.altair --accept-package-agreements --accept-source-agreements
 # choco install altserver
 choco install androidstudio
 ## choco install anydesk
@@ -78,13 +82,13 @@ choco install beekeeper-studio
 # choco install browserstacklocal
 choco install cyberduck datagrip docker-desktop
 # choco install fedora-media-writer
-winget install --silent figma
+winget install --silent figma --accept-package-agreements --accept-source-agreements
 ## choco install firefox
 choco install firacode jetbrainsmono
 ## choco install framer
 ## choco install ungoogled-chromium
 choco install potplayer madvr mediainfo
-winget install --silent iMazing
+winget install --silent iMazing --accept-package-agreements --accept-source-agreements
 choco install sharex obs-studio
 ## winget install --silent Krisp
 # choco install FanControl
@@ -99,9 +103,9 @@ choco install heidisql postman
 # choco install proxyman
 ## choco install pycharm
 choco install qbittorrent
-winget install --silent RustemMussabekov.Raindrop
+winget install --silent RustemMussabekov.Raindrop --accept-package-agreements --accept-source-agreements
 ## choco install rpi-imager
-winget install --silent Readdle.Spark
+winget install --silent Readdle.Spark --accept-package-agreements --accept-source-agreements
 # choco install redisinsight
 ## choco install slack spotify
 choco install tableplus telegram
