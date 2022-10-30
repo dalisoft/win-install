@@ -56,7 +56,7 @@
   "DisableChat": true,
   "TaskbarSmaller": false,
   "ClassicRibbon": false,
-  "ClassicMenu": false,
+  "ClassicMenu": true,
   "DisableTPMCheck": false,
   "CompactMode": false,
   "DisableStickers": true,
