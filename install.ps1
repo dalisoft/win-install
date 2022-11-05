@@ -138,7 +138,8 @@ python3 -m pip install --upgrade pip
 ##########################
 
 Write-Output "Installing fnm versions..."
-fnm install 16.18.0
+fnm install 16.18.1
+fnm install 18.12.1
 fnm use system
 fnm default system
 
