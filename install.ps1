@@ -116,6 +116,9 @@ choco install vscode-insiders
 choco install wiztree ventoy linkshellextension
 choco install wsl-ubuntu-2204
 
+# Misc utilities
+choco install vnc-viewer twinkle-tray
+
 
 ##########################
 ###### npm packages ######
