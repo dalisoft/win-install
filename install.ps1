@@ -29,7 +29,7 @@ choco install llvm mkcert nano
 choco install neovim openjdk11
 choco install nodejs php python3
 # choco install pinentry pipx pixman
-choco install qemu postgresql14
+# choco install qemu postgresql14
 # choco install podman qt pyqt
 choco install rclone ripgrep rsync fastcopy
 choco install rust rust-analyzer
@@ -46,7 +46,7 @@ choco install yt-dlp mongodb
 ##########################
 choco install nvidia-display-driver
 choco install geforce-experience
-choco install cuda
+#choco install cuda
 choco install mac-precision-touchpad
 winget install --silent Nvidia.Broadcast --accept-package-agreements --accept-source-agreements
 winget install --silent Paragon.APFS --accept-package-agreements --accept-source-agreements
@@ -106,9 +106,9 @@ choco install qbittorrent
 winget install --silent RustemMussabekov.Raindrop --accept-package-agreements --accept-source-agreements
 ## choco install rpi-imager
 winget install --silent Readdle.Spark --accept-package-agreements --accept-source-agreements
-# choco install redisinsight
+# choco install redisinsight tableplus
 ## choco install slack spotify
-choco install tableplus telegram
+choco install telegram
 ## choco install teamviewer
 choco install vscode-insiders
 ## choco install vscode vmware-workstation-player
