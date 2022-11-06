@@ -38,7 +38,7 @@
   "DisableAutomaticUpdates": false,
   "ExcludeDrivers": false,
   "DisableTelemetryServices": true,
-  "DisablePrivacyOptions": true,
+  "DisablePrivacyOptions": false,
   "DisableCortana": true,
   "DisableSensorServices": true,
   "DisableWindowsInk": true,
